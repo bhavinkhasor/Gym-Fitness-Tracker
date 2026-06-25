@@ -1,0 +1,719 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0f0f0f;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+
+.navbar {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    color: white !important;
+}
+
+.navbar-brand span {
+    color: #00ff88;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #00ff88 !important;
+}
+
+/* Hero */
+
+.hero {
+    padding-top: 100px;
+}
+
+.hero h1 {
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.hero h1 span {
+    color: #00ff88;
+}
+
+.hero p {
+    margin: 20px 0;
+    color: #aaa;
+    font-size: 18px;
+}
+
+.main-btn {
+    padding: 14px 40px;
+    border: none;
+    background: #00ff88;
+    color: black;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00ff88;
+}
+
+.hero-img {
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
+}
+
+/* Stats */
+
+.stats {
+    padding: 80px 0;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+    border: 1px solid #00ff88;
+}
+
+.stat-card h2 {
+    color: #00ff88;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.stat-card p {
+    color: #ccc;
+}
+
+/* Responsive */
+
+@media(max-width:991px) {
+
+    .hero {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .hero-img {
+        margin-top: 40px;
+    }
+
+}
+
+/* About Section */
+
+.about-section {
+    padding: 100px 0;
+}
+
+.about-img {
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0, 255, 136, 0.2);
+}
+
+.about-content {
+    padding-left: 30px;
+}
+
+.about-content h5 {
+    color: #00ff88;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.about-content h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    color: #aaa;
+    line-height: 1.8;
+}
+
+.about-features {
+    margin: 30px 0;
+}
+
+.feature-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.feature-box i {
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 255, 136, 0.1);
+    color: #00ff88;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+/* Services */
+
+.services {
+    padding: 100px 0;
+}
+
+.section-title h5 {
+    color: #00ff88;
+    font-weight: 600;
+}
+
+.section-title h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.4s;
+    height: 100%;
+    border: 1px solid transparent;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    border-color: #00ff88;
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+}
+
+.service-card i {
+    font-size: 50px;
+    color: #00ff88;
+    margin-bottom: 25px;
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.service-card p {
+    color: #aaa;
+    line-height: 1.8;
+}
+
+/* Responsive */
+
+@media(max-width:991px) {
+
+    .about-content {
+        padding-left: 0;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .about-content h2,
+    .section-title h2 {
+        font-size: 36px;
+    }
+
+    .feature-box {
+        justify-content: center;
+    }
+
+}
+
+/* =========================
+   Trainers Section
+========================= */
+
+.trainers {
+    padding: 100px 0;
+    background: #111;
+}
+
+.trainer-card {
+    background: #1a1a1a;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: 0.4s ease;
+    border: 1px solid #222;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.trainer-card:hover {
+    transform: translateY(-10px);
+    border-color: #00ff88;
+    box-shadow: 0 0 25px rgba(0, 255, 136, 0.3);
+}
+
+.trainer-img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+.trainer-info {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.trainer-info h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.trainer-info p {
+    color: #00ff88;
+    margin-bottom: 20px;
+}
+
+.social-icons i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #222;
+    color: white;
+    margin: 0 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.social-icons i:hover {
+    background: #00ff88;
+    color: black;
+}
+
+/* =========================
+   Pricing Section
+========================= */
+
+.pricing {
+    padding: 100px 0;
+    background: #0f0f0f;
+}
+
+.price-card {
+    background: #1a1a1a;
+    border-radius: 25px;
+    padding: 50px 30px;
+    text-align: center;
+    position: relative;
+    transition: 0.4s ease;
+    border: 1px solid #222;
+    overflow: hidden;
+}
+
+.price-card:hover {
+    transform: translateY(-12px);
+    border-color: #00ff88;
+    box-shadow: 0 0 30px rgba(0, 255, 136, 0.25);
+}
+
+.price-card h3 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.price-card h1 {
+    font-size: 65px;
+    color: #00ff88;
+    margin: 20px 0;
+    font-weight: 800;
+}
+
+.price-card p {
+    color: #aaa;
+}
+
+.price-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.price-card ul li {
+    padding: 12px 0;
+    color: #ddd;
+    border-bottom: 1px solid #222;
+}
+
+.active-price {
+    border: 2px solid #00ff88;
+    transform: scale(1.03);
+}
+
+.popular {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #00ff88;
+    color: black;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* =========================
+   Testimonials Section
+========================= */
+
+.testimonials {
+    padding: 100px 0;
+    background: #111;
+}
+
+.testimonial-card {
+    max-width: 750px;
+    margin: auto;
+    background: #1a1a1a;
+    border-radius: 25px;
+    padding: 50px 40px;
+    border: 1px solid #222;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.testimonial-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #00ff88;
+    margin-bottom: 25px;
+}
+
+.testimonial-card p {
+    color: #ccc;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.testimonial-card h4 {
+    color: #00ff88;
+    font-weight: 700;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media(max-width:991px) {
+
+    .trainer-img {
+        height: 320px;
+    }
+
+    .price-card {
+        margin-bottom: 30px;
+    }
+
+    .price-card h1 {
+        font-size: 50px;
+    }
+
+    .testimonial-card {
+        padding: 40px 20px;
+    }
+
+}
+
+/* =========================
+   Workout Tracker
+========================= */
+
+.tracker-section,
+.bmi-section,
+.water-section {
+    padding: 100px 0;
+    background: #0f0f0f;
+}
+
+.tracker-box,
+.bmi-box,
+.water-box {
+    max-width: 600px;
+    margin: auto;
+    background: #1a1a1a;
+    padding: 40px;
+    border-radius: 25px;
+    border: 1px solid #222;
+    text-align: center;
+}
+
+.form-control {
+    background: #111;
+    border: 1px solid #333;
+    color: white;
+    padding: 15px;
+}
+
+.form-control:focus {
+    background: #111;
+    color: white;
+    border-color: #00ff88;
+    box-shadow: none;
+}
+
+#workoutList {
+    margin-top: 30px;
+    padding: 0;
+}
+
+#workoutList li {
+    list-style: none;
+    background: #111;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-left: 4px solid #00ff88;
+}
+
+/* =========================
+   Water Tracker
+========================= */
+
+.water-box h1 {
+    font-size: 80px;
+    color: #00ff88;
+    font-weight: 800;
+}
+
+/* =========================
+   Dark Mode
+========================= */
+
+.dark-mode-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    background: #00ff88;
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 22px;
+    z-index: 999;
+    transition: 0.3s;
+}
+
+.dark-mode-btn:hover {
+    transform: scale(1.1);
+}
+
+.light-mode {
+    background: #f5f5f5 !important;
+    color: black !important;
+}
+
+/* =========================
+   Footer
+========================= */
+
+.footer {
+    background: #111;
+    padding: 60px 0;
+}
+
+.footer h2 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.footer h2 span {
+    color: #00ff88;
+}
+
+.footer p {
+    color: #aaa;
+}
+
+.footer-icons {
+    margin: 20px 0;
+}
+
+.footer-icons i {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    background: #1a1a1a;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.footer-icons i:hover {
+    background: #00ff88;
+    color: black;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+
+/* =========================
+   Navbar Profile
+========================= */
+
+.profile-box {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #18dd81;
+    padding: 10px 18px;
+    border-radius: 50px;
+    color: white;
+
+}
+
+.profile-box i {
+
+    width: 35px;
+    height: 35px;
+    background: #00ff88;
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* =========================
+   Profile Card
+========================= */
+
+.profile-section {
+
+    padding: 100px 0;
+    background: #111;
+
+}
+
+.profile-card {
+
+    max-width: 700px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 30px;
+    padding: 50px;
+    border: 1px solid #222;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+
+}
+
+.profile-top {
+
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.profile-img {
+
+    width: 120px;
+    height: 120px;
+    background: #00ff88;
+    color: black;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+
+}
+
+.profile-top h2 {
+
+    font-size: 35px;
+    font-weight: 700;
+
+}
+
+.profile-top p {
+
+    color: #00ff88;
+
+}
+
+.profile-info {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+.info-box {
+
+    background: #1a1a1a;
+    padding: 25px;
+    border-radius: 20px;
+
+}
+
+.info-box h4 {
+
+    margin-bottom: 10px;
+    color: #00ff88;
+
+}
+
+.info-box span {
+
+    color: #ccc;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px) {
+
+    .profile-info {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
